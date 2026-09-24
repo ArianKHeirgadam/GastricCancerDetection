@@ -1,0 +1,14 @@
+bin/
+obj/
+.vs/
+.idea/
+storage/genomes/*
+storage/reports/*
+appsettings.*.local.json
+*.user
+*.suo
+__pycache__/
+*.pyc
+.env
+.env.*
+!\.env.example

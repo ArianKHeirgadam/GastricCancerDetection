@@ -1,0 +1,2 @@
+using GastricCancerDetection.Application.Interfaces; using GastricCancerDetection.Infrastructure.Persistence; using Microsoft.EntityFrameworkCore;
+namespace GastricCancerDetection.Infrastructure.Services; public class CNVAnalysisService:ICNVAnalysisService { private readonly GastricCancerDbContext _db; public CNVAnalysisService(GastricCancerDbContext db)=>_db=db; public Task<int> AnalyzeAsync(int runId,CancellationToken ct=default)=>_db.CopyNumberAlterations.CountAsync(x=>x.AnalysisRunId==runId,ct); }

@@ -1,0 +1,5 @@
+##fileformat=VCFv4.2
+##reference=GRCh38
+##INFO=<ID=VAF,Number=A,Type=Float,Description="Variant allele fraction">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+chr17	7579472	.	C	T	.	PASS	VAF=0.5

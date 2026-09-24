@@ -1,0 +1,4 @@
+namespace GastricCancerDetection.Application.DTOs;
+public record AnalysisRunRequestDto(int PanelId,int ModelVersionId,string? Dataset=null,string? GenomeBuild=null,Dictionary<string,object?>? Parameters=null);
+public record CandidateDto(long CandidateId,int AnalysisRunId,string CandidateKey,string FeatureType,string? CandidateName,double? CfDNADetectabilityScore,double? OverallPriority,string EvidenceStatus);
+public record CfDNADetectabilityDto(long CandidateId,int AnalysisRunId,long? RegionSizeBp,int? InformativeSiteCount,double? SignalStrength,double? CopyMultiplier,double? DilutionResistance,double? LowDepthFeasibility,double? RegionalRedundancy,double? EarlyStageScore,double? CancerSpecificityScore,double? LiteratureWhitespace,double? ValidationGap,double? BiologicalSupport,double? TechnicalFeasibility,double? CfDNADetectabilityScore,string? ModelVersion);

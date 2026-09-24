@@ -1,0 +1,1 @@
+namespace GastricCancerDetection.Application.Interfaces; public interface IReportService { Task<string> GenerateExcelAsync(int runId,CancellationToken ct=default); Task<string> GeneratePdfAsync(int runId,CancellationToken ct=default); }

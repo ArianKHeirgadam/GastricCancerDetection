@@ -1,0 +1,4 @@
+using System.ComponentModel.DataAnnotations.Schema;
+namespace GastricCancerDetection.Domain.Entities;
+[Table("CopyNumberAlterations", Schema="geno")]
+public class CopyNumberAlteration { public long CopyNumberAlterationId {get;set;} public int AnalysisRunId {get;set;} public int BuildId {get;set;} public string Chromosome {get;set;}=null!; public string? Arm {get;set;} public long Start {get;set;} public long End {get;set;} public long SizeBp {get;set;} public double? CopyNumber {get;set;} public double? TumorFrequency {get;set;} public double? NormalFrequency {get;set;} public double? CohortRecurrence {get;set;} public string? EventType {get;set;} public string? Subtype {get;set;} public string? Stage {get;set;} public string? Validation {get;set;} public string? LiteratureEvidence {get;set;} public DateTime CreatedAt {get;set;} }
